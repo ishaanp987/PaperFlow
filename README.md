@@ -1,8 +1,14 @@
 # PaperFlow
 
+[![Checks](https://github.com/ishaanp987/PaperFlow/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ishaanp987/PaperFlow/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js 24+](https://img.shields.io/badge/Node.js-24%2B-43853d.svg)](https://nodejs.org/)
+
 Turn handwritten lecture PDFs into editable study guides, organized Notion pages, and Anki flashcards.
 
 PaperFlow runs on your computer. Export a notebook from reMarkable, upload the PDF, review the generated material, and publish when you're ready. Each user supplies their own OpenAI and Notion credentials through the browser setup screen.
+
+[Get started](#get-started) · [Connect your accounts](#connect-your-accounts) · [Architecture](ARCHITECTURE.md) · [Contribute](CONTRIBUTING.md)
 
 ![PaperFlow library](docs/library.jpg)
 
@@ -41,7 +47,7 @@ Processing sends the complete PDF to OpenAI for transcription, then sends the tr
 ### Notion
 
 1. Create a normal Notion page called **PaperFlow** to serve as your destination. Use a page, rather than a database, for this version.
-2. Create a Notion personal access token or an internal connection following the [official quickstart](https://developers.notion.com/guides/get-started/quick-start) and [internal connection guide](https://developers.notion.com/guides/get-started/create-a-notion-integration).
+2. Create a Notion personal access token or an internal connection following the [official quickstart](https://developers.notion.com/guides/get-started/quick-start) and [internal connection guide](https://developers.notion.com/guides/get-started/internal-connections).
 3. For an internal connection, enable **read, insert, and update content**. Open your destination page's menu, choose **Connections**, and add the connection so it can access that page and its descendants.
 4. Paste the token and the destination page URL into Settings. PaperFlow extracts the page ID automatically. You can also paste the ID directly.
 5. Choose **Save & test Notion**. This verifies that the destination is readable; writing and file uploads are verified when you publish.
