@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.local-data/
+.paperflow/
+.pnpm-store/
+*.sqlite*
+*.db*
+coverage/
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db
+*.log
