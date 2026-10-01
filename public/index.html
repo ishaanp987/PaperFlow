@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Turn handwritten lecture PDFs into editable study guides, Notion pages and Anki flashcards. Runs on your computer.">
+  <title>PaperFlow — Your notes, understood</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="#library" class="brand"><span class="brand-mark">PF</span><span>PaperFlow</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#library" data-nav="library"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6"/></svg>Library</a>
+      <a href="#settings" data-nav="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-.5 3-2.5 1.5L3 7l-1 3 2.5 2L4 15l-2 2 2 3 3-1 2 1 .5 3h4L14 20l2-1 3 1 2-3-2-2 .5-3L22 10l-1-3-3 .5L15.5 6 15 3z"/><circle cx="12" cy="12" r="3"/></svg>Settings</a>
+    </nav>
+    <p class="local-label"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Runs on your computer.</p>
+  </aside>
+  <main id="main"><p class="loading">Opening your library…</p></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
